@@ -1,0 +1,21 @@
+[user]
+	name = Xavier Delamotte
+	email = xavier.delamotte@red-badger.com
+  signingkey = AE34EFC57C377975573B6D60C84D9DBDC507E5C0
+[core]
+	excludesfile = /Users/xade/.gitignore_global
+  editor = nvim
+  autocrlf = false
+[diff]
+  tool = vimdiff
+[difftool]
+  prompt = false
+[merge]
+  summary = true
+  verbosity = 1
+  tool = vimdiff
+[mergetool]
+  prompt = false
+[mergetool "vimdiff"]
+  cmd="vim -c 'Gdiff' $MERGED"     # use fugitive.vim for 3-way merge
+  keepbackup=false

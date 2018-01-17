@@ -20,8 +20,6 @@ echo "[Install] tmux"
 echo "[Install] reattach-to-user-namespace"
   brew install reattach-to-user-namespace
 
-echo "[Install] Ctags"
-  brew install ctags
 
 echo "[Install] neovim"
   brew tap neovim/neovim
@@ -34,14 +32,3 @@ echo "[Install] vim-plug"
 echo "[Install] alt"
   brew tap "uptech/homebrew-oss"
   brew install uptech/oss/alt
-
-echo "[Install] emacs"
-  brew tap "railwaycat/emacsmacport"
-  brew 'emacs-mac', args: ['with-spacemacs-icon', 'with-imagemagick']
-
-# Ruby version manager
-echo "[Install] rbenv"
-  brew install rbenv
-
-echo "[Install] fzf"
-  brew install fzf
