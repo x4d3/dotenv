@@ -32,3 +32,6 @@ echo "[Install] vim-plug"
 echo "[Install] alt"
   brew tap "uptech/homebrew-oss"
   brew install uptech/oss/alt
+
+echo "[Install] stow"
+  brew install stow

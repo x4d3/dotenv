@@ -62,7 +62,7 @@ export GOPATH=$HOME/go
 # Setting ag as the default source for fzf to respect .gitignore, .agignore
 export FZF_DEFAULT_COMMAND='ag -g ""'
 
-source $HOME/.dotfiles/zsh/aliases.zsh
+
 
 [[ -s "$HOME/.rbenv" ]] && eval "$(rbenv init -)"
 [[ -f "$HOME/.secrets" ]] && source "$HOME/.secrets"

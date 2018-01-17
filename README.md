@@ -19,7 +19,7 @@ cd ~/.dotfiles
 ./brews.sh
 
 # Symlink dotfiles
-./dotfiles.sh
+stow files
 ```
 
 ## nvim
