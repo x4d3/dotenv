@@ -1,0 +1,32 @@
+#!/bin/sh
+
+echo "[Symlink] nvim"
+  mkdir -p $HOME/.config/nvim
+  ln -s $HOME/.dotfiles/nvim $HOME/.config/nvim/init.vim
+
+echo "[Symlink] git"
+  if [ ! -L $HOME/.git_template ]; then
+    ln -s $HOME/.dotfiles/git_template $HOME/.git_template
+  fi
+
+dotfiles=(
+  agignore
+  ctags
+  gitconfig
+  gitignore
+  spacemacs
+  tigrc
+  tmux.conf
+  zshrc
+)
+
+for file in "${dotfiles[@]}"
+do
+  echo "[Symlink] $file"
+  ln -s $HOME/.dotfiles/$file $HOME/.$file
+done
+
+echo "[Symlink] gnupg"
+  mkdir -p $HOME/.gnupg
+  ln -s $HOME/.dotfiles/gpg.conf $HOME/.gnupg/gpg.conf
+  ln -s $HOME/.dotfiles/gpg-agent.conf $HOME/.gnupg/gpg-agent.conf
