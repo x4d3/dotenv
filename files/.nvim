@@ -19,7 +19,8 @@ set clipboard+=unnamedplus      " Add system clipboard
 let mapleader="\<SPACE>"        " Change leader key to SPACE
 
 """ Appearance
-colorscheme molokai
+colorscheme molokaiA FUNCTION THAT TAKES A COMPONENT AND RETURNS A NEW COMPONENT
+
 set colorcolumn=80              " Display 80th column
 set nowrap                      " Don't wrap lines
 set shiftwidth=2                " Indentation amount for < and > commands

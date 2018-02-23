@@ -68,6 +68,12 @@ plugins=(gitfast osx rvm tmuxinator)
 source $ZSH/oh-my-zsh.sh
 
 export PATH=$HOME/.dotfiles/bin:$HOME/go/bin:$HOME/bin:/usr/local/sbin:/usr/local/bin:$PATH
+export ANDROID_HOME="/Users/xade/Library/Android/sdk"
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+
+# FM Eco source file
+source ~/repo/fm-ecom/.env
 
 export EDITOR=nvim
 export GOPATH=$HOME/go
@@ -76,6 +82,11 @@ export GOPATH=$HOME/go
 export FZF_DEFAULT_COMMAND='ag -g ""'
 
 
-
 [[ -s "$HOME/.rbenv" ]] && eval "$(rbenv init -)"
 [[ -f "$HOME/.secrets" ]] && source "$HOME/.secrets"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="$PATH:$HOME/.rvm/bin"
